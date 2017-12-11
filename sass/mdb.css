@@ -6504,6 +6504,10 @@ table.table-sm td {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem; }
 
+html,
+body {
+  height: 100%; }
+
 .hm-gradient .full-bg-img {
   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
   background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
@@ -6511,18 +6515,96 @@ table.table-sm td {
   background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
   background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%); }
 
-/* TEMPLATE STYLES */
 .flex-center {
   color: #fff; }
 
 .intro-1 {
   background: url("../img/start_bg.jpg");
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: center; }
+
+.venus-logo-brand img {
+  max-width: 130px;
+  margin-top: 0px; }
+
+.venus-first-slide {
+  background: url("../img/slide1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.venus-second-slide {
+  background: url("../img/slide2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.venus-third-slide {
+  background: url("../img/slide3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/* Navigation*/
+.navbar {
+  background-color: transparent; }
+
+.top-nav-collapse {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.8), rgba(216, 27, 96, 0.8) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.8), rgba(216, 27, 96, 0.8) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.8)), to(rgba(216, 27, 96, 0.8)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.8), rgba(216, 27, 96, 0.8) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.8), rgba(216, 27, 96, 0.8) 100%); }
+
+.navbar .scrolling-navbar {
+  -webkit-transition: background 3s ease-in-out, padding 9s ease-in-out;
+  -moz-transition: background 3s ease-in-out, padding 9s ease-in-out;
+  transition: background 3s ease-in-out, padding 9s ease-in-out; }
+
+.anons-item {
+  border: 1px solid #fff; }
+
+footer.page-footer {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, 0.6)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%); }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: black; } }
+
+/* Carousel*/
+.carousel {
+  height: 80%; }
+
+@media (max-width: 776px) {
+  .carousel {
+    height: 70%; } }
+
+.carousel-item,
+.active {
+  height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+
+/*Caption*/
+.flex-center {
+  color: #fff; }
 
 .navbar .btn-group .dropdown-menu a:hover {
   color: #000 !important; }
 
 .navbar .btn-group .dropdown-menu a:active {
   color: #fff !important; }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    margin-top: 1%; } }
+
+@media (min-width: 600px) {
+  .navbar.scrolling-navbar.top-nav-collapse {
+    padding-bottom: 10px; } }
