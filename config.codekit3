@@ -271,6 +271,66 @@
 		"oAP": "\/font\/roboto\/Roboto-Thin.woff2",
 		"oF": 0
 		},
+	"\/img\/anons_1.jpg": {
+		"ft": 16384,
+		"iS": 254130,
+		"oA": 0,
+		"oAP": "\/img\/anons_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/anons_2.jpg": {
+		"ft": 16384,
+		"iS": 457669,
+		"oA": 0,
+		"oAP": "\/img\/anons_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/anons_3.jpg": {
+		"ft": 16384,
+		"iS": 169491,
+		"oA": 0,
+		"oAP": "\/img\/anons_3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/anons_4.jpg": {
+		"ft": 16384,
+		"iS": 480598,
+		"oA": 0,
+		"oAP": "\/img\/anons_4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/anons_5.jpg": {
+		"ft": 16384,
+		"iS": 373037,
+		"oA": 0,
+		"oAP": "\/img\/anons_5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/anons_6.jpg": {
+		"ft": 16384,
+		"iS": 245218,
+		"oA": 0,
+		"oAP": "\/img\/anons_6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/lightbox\/default-skin.png": {
 		"ft": 32768,
 		"iS": 547,
@@ -426,6 +486,46 @@
 		"oA": 0,
 		"oAP": "\/img\/overlays\/Thumbs.db",
 		"oF": 0
+		},
+	"\/img\/slide1.jpg": {
+		"ft": 16384,
+		"iS": 333833,
+		"oA": 0,
+		"oAP": "\/img\/slide1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/slide1_new.jpg": {
+		"ft": 16384,
+		"iS": 154853,
+		"oA": 0,
+		"oAP": "\/img\/slide1_new.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/slide2.jpg": {
+		"ft": 16384,
+		"iS": 563321,
+		"oA": 0,
+		"oAP": "\/img\/slide2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/slide3.jpg": {
+		"ft": 16384,
+		"iS": 290408,
+		"oA": 0,
+		"oAP": "\/img\/slide3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/start_bg.jpg": {
 		"ft": 16384,

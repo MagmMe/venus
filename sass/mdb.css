@@ -6508,6 +6508,9 @@ html,
 body {
   height: 100%; }
 
+.venus-h1 {
+  color: #DA4F7A; }
+
 .hm-gradient .full-bg-img {
   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
   background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
@@ -6565,24 +6568,9 @@ body {
 .anons-item {
   border: 1px solid #fff; }
 
-footer.page-footer {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, 0.6)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
-  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%); }
-
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: black; } }
-
 /* Carousel*/
 .carousel {
   height: 80%; }
-
-@media (max-width: 776px) {
-  .carousel {
-    height: 70%; } }
 
 .carousel-item,
 .active {
@@ -6601,10 +6589,38 @@ footer.page-footer {
 .navbar .btn-group .dropdown-menu a:active {
   color: #fff !important; }
 
+.venus-jumbo {
+  background: url("../img/jumbo-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+footer.page-footer {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, 0.6)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%); }
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
-    margin-top: 1%; } }
+    margin-top: 1%; }
+  .venus-jumbo {
+    padding-top: 15rem;
+    padding-bottom: 8rem; }
+    .venus-jumbo .jumbotron-heading {
+      color: #DA4F7A;
+      font-weight: 400;
+      text-align: left; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: black; } }
 
 @media (min-width: 600px) {
   .navbar.scrolling-navbar.top-nav-collapse {
     padding-bottom: 10px; } }
+
+@media (max-width: 776px) {
+  .carousel {
+    height: 70%; } }

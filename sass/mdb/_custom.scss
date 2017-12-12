@@ -22,6 +22,11 @@ body {
     height: 100%;
 }
 
+
+.venus-h1{
+  color: #DA4F7A;
+}
+
 // Start Page Magme
 
 .hm-gradient .full-bg-img {
@@ -43,6 +48,9 @@ body {
 
 // Start Page End
 
+// Home Page Start
+
+// Logo
 .venus-logo-brand{
   img{
     max-width: 130px;
@@ -50,6 +58,7 @@ body {
   }
 }
 
+// Slides
 .venus-first-slide{
   @include bgimage-jpg('slide1');
   @include bg-attr(cover, no-repeat, center);
@@ -64,6 +73,7 @@ body {
   @include bgimage-jpg('slide3');
   @include bg-attr(cover, no-repeat, center);
 }
+
 
 /* Navigation*/
 
@@ -87,36 +97,14 @@ body {
     transition: background 3s ease-in-out, padding 9s ease-in-out;
 }
 
-
 .anons-item{
   border: 1px solid #fff;
 }
-
-footer.page-footer {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: black;
-    }
-}
-
 
 /* Carousel*/
 
 .carousel {
     height: 80%;
-}
-
-@media (max-width: 776px) {
-    .carousel {
-        height: 70%;
-    }
 }
 
 .carousel-item,
@@ -140,6 +128,23 @@ footer.page-footer {
 }
 
 
+.venus-jumbo{
+  @include bgimage-jpg('jumbo-main');
+  @include bg-attr(cover, no-repeat, center);
+
+}
+
+
+
+footer.page-footer {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+}
+
+
 // Responsive
 
 @media (min-width: 992px){
@@ -148,10 +153,35 @@ footer.page-footer {
     margin-top: 1%;
   }
 
+  .venus-jumbo{
+    padding-top: 15rem;
+    padding-bottom: 8rem;
+
+      .jumbotron-heading{
+        color:#DA4F7A;
+        font-weight: 400;
+        text-align: left;
+      }
+  }
+
 }
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: black;
+    }
+}
+
 
 @media (min-width: 600px){
   .navbar.scrolling-navbar.top-nav-collapse{
     padding-bottom: 10px;
   }
+}
+
+
+@media (max-width: 776px) {
+    .carousel {
+        height: 70%;
+    }
 }
