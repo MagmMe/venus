@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/css\/bootstrap.css": {
 		"aP": 1,
 		"bl": 0,
@@ -326,6 +333,26 @@
 		"iS": 245218,
 		"oA": 0,
 		"oAP": "\/img\/anons_6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/anons_7.jpg": {
+		"ft": 16384,
+		"iS": 266835,
+		"oA": 0,
+		"oAP": "\/img\/anons_7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/jumbo-main.jpg": {
+		"ft": 16384,
+		"iS": 110147,
+		"oA": 0,
+		"oAP": "\/img\/jumbo-main.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -712,6 +739,13 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/kobiety.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/kobiety.html",
+		"oF": 0
+		},
 	"\/License.pdf": {
 		"cB": 0,
 		"ft": 8192,
@@ -724,6 +758,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/MDB License.pdf",
+		"oF": 0
+		},
+	"\/page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page.html",
 		"oF": 0
 		},
 	"\/README.txt": {
@@ -1669,7 +1710,7 @@
 	"creationDate": 534255041,
 	"displayValue": "Venus",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_orange"
+	"iconImageName": "meme-leo"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

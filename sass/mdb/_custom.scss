@@ -1,20 +1,18 @@
-
 // Mixins
-
 @mixin bgimage-jpg($name) {
-  $url:"../img/#{$name}.jpg";
-  background: url($url);
+    $url:"../img/#{$name}.jpg";
+    background: url($url);
 }
 
 @mixin bgimage-png($name) {
-  $url:"../img/#{$name}.png";
-  background: url($url);
+    $url:"../img/#{$name}.png";
+    background: url($url);
 }
 
-@mixin bg-attr($bg-size, $bg-repeat, $bg-position){
-  background-size: $bg-size;
-  background-repeat: $bg-repeat;
-  background-position: $bg-position;
+@mixin bg-attr($bg-size, $bg-repeat, $bg-position) {
+    background-size: $bg-size;
+    background-repeat: $bg-repeat;
+    background-position: $bg-position;
 }
 
 html,
@@ -22,13 +20,15 @@ body {
     height: 100%;
 }
 
+main {
+    margin-top: 6rem;
+}
 
-.venus-h1{
-  color: #DA4F7A;
+.venus-h1 {
+    color: #DA4F7A;
 }
 
 // Start Page Magme
-
 .hm-gradient .full-bg-img {
     background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
     background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
@@ -40,38 +40,36 @@ body {
 .flex-center {
     color: #fff;
 }
+
 .intro-1 {
     @include bgimage-jpg('start_bg');
     @include bg-attr(cover, no-repeat, center);
-
 }
 
 // Start Page End
-
 // Home Page Start
-
 // Logo
-.venus-logo-brand{
-  img{
-    max-width: 130px;
-    margin-top: 0px;
-  }
+.venus-logo-brand {
+    img {
+        max-width: 130px;
+        margin-top: 0px;
+    }
 }
 
 // Slides
-.venus-first-slide{
-  @include bgimage-jpg('slide1');
-  @include bg-attr(cover, no-repeat, center);
+.venus-first-slide {
+    @include bgimage-jpg('slide1');
+    @include bg-attr(cover, no-repeat, center);
 }
 
-.venus-second-slide{
-  @include bgimage-jpg('slide2');
-  @include bg-attr(cover, no-repeat, center);
+.venus-second-slide {
+    @include bgimage-jpg('slide2');
+    @include bg-attr(cover, no-repeat, center);
 }
 
-.venus-third-slide{
-  @include bgimage-jpg('slide3');
-  @include bg-attr(cover, no-repeat, center);
+.venus-third-slide {
+    @include bgimage-jpg('slide3');
+    @include bg-attr(cover, no-repeat, center);
 }
 
 
@@ -79,16 +77,26 @@ body {
 
 .navbar {
     background-color: transparent;
+    font-size: .8rem;
+    .job-link {
+        border: 1px solid #fff;
+    }
+}
 
+.venus-non-transparent-nav {
+    background: -moz-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(231, 11, 96, 0.8)), to(rgba(42, 27, 161, .8)));
+    background: -o-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
+    background: linear-gradient(to 45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
 }
 
 .top-nav-collapse {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-  background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+    background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
 }
 
 .navbar .scrolling-navbar {
@@ -97,9 +105,10 @@ body {
     transition: background 3s ease-in-out, padding 9s ease-in-out;
 }
 
-.anons-item{
-  border: 1px solid #fff;
+.anons-item {
+    border: 1px solid #fff;
 }
+
 
 /* Carousel*/
 
@@ -115,55 +124,71 @@ body {
 .carousel-inner {
     height: 100%;
 }
+
+
 /*Caption*/
 
 .flex-center {
     color: #fff;
 }
+
 .navbar .btn-group .dropdown-menu a:hover {
     color: #000 !important;
 }
+
 .navbar .btn-group .dropdown-menu a:active {
     color: #fff !important;
 }
 
-
-.venus-jumbo{
-  @include bgimage-jpg('jumbo-main');
-  @include bg-attr(cover, no-repeat, center);
-
+.venus-jumbo {
+    @include bgimage-jpg('jumbo-main');
+    @include bg-attr(cover, no-repeat, center);
 }
 
+// Simple Page
+.venus-simple-page {
+    background: #fff;
+    .container {
+        height: 100vh;
+        >div {
+            padding-top: 30%;
+        }
+    }
+}
 
+// Kobiety
+.venus-simple-search {
+    label.active {
+        transform: translateY(-40%);
+        font-size: 1.2rem;
+    }
+    input[type=text] {
+        height: 3.3rem;
+    }
+}
 
 footer.page-footer {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
 }
 
-
 // Responsive
-
-@media (min-width: 992px){
-
-  .navbar-expand-lg .navbar-nav{
-    margin-top: 1%;
-  }
-
-  .venus-jumbo{
-    padding-top: 15rem;
-    padding-bottom: 8rem;
-
-      .jumbotron-heading{
-        color:#DA4F7A;
-        font-weight: 400;
-        text-align: left;
-      }
-  }
-
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        margin-top: 1%;
+    }
+    .venus-jumbo {
+        padding-top: 15rem;
+        padding-bottom: 8rem;
+        .jumbotron-heading {
+            color: #DA4F7A;
+            font-weight: 400;
+            text-align: left;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -172,13 +197,11 @@ footer.page-footer {
     }
 }
 
-
-@media (min-width: 600px){
-  .navbar.scrolling-navbar.top-nav-collapse{
-    padding-bottom: 10px;
-  }
+@media (min-width: 600px) {
+    .navbar.scrolling-navbar.top-nav-collapse {
+        padding-bottom: 10px;
+    }
 }
-
 
 @media (max-width: 776px) {
     .carousel {

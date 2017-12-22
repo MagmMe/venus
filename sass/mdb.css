@@ -6508,6 +6508,9 @@ html,
 body {
   height: 100%; }
 
+main {
+  margin-top: 6rem; }
+
 .venus-h1 {
   color: #DA4F7A; }
 
@@ -6551,7 +6554,17 @@ body {
 
 /* Navigation*/
 .navbar {
-  background-color: transparent; }
+  background-color: transparent;
+  font-size: .8rem; }
+  .navbar .job-link {
+    border: 1px solid #fff; }
+
+.venus-non-transparent-nav {
+  background: -moz-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, 0.8) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, 0.8) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(231, 11, 96, 0.8)), to(rgba(42, 27, 161, 0.8)));
+  background: -o-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, 0.8) 100%);
+  background: linear-gradient(to 45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, 0.8) 100%); }
 
 .top-nav-collapse {
   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.8), rgba(216, 27, 96, 0.8) 100%);
@@ -6594,6 +6607,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+
+.venus-simple-page {
+  background: #fff; }
+  .venus-simple-page .container {
+    height: 100vh; }
+    .venus-simple-page .container > div {
+      padding-top: 30%; }
+
+.venus-simple-search label.active {
+  transform: translateY(-40%);
+  font-size: 1.2rem; }
+
+.venus-simple-search input[type=text] {
+  height: 3.3rem; }
 
 footer.page-footer {
   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
