@@ -140,6 +140,10 @@ main {
     color: #fff !important;
 }
 
+.card {
+    margin-bottom: 3rem;
+}
+
 .venus-jumbo {
     @include bgimage-jpg('jumbo-main');
     @include bg-attr(cover, no-repeat, center);
@@ -178,7 +182,7 @@ footer.page-footer {
 // Responsive
 @media (max-width: 767px) {
     .card-title {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .card-text {
         display: none;
@@ -207,7 +211,11 @@ footer.page-footer {
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: black;
+        background: -moz-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
+        background: -webkit-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
+        background: -webkit-gradient(linear, 45deg, from(rgba(231, 11, 96, 0.8)), to(rgba(42, 27, 161, .9)));
+        background: -o-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
+        background: linear-gradient(to 45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
     }
 }
 
