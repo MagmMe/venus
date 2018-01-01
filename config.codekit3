@@ -445,6 +445,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/avatar_klient.png": {
+		"ft": 32768,
+		"iS": 38644,
+		"oA": 0,
+		"oAP": "\/img\/avatar_klient.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/jumbo-main.jpg": {
 		"ft": 16384,
 		"iS": 110147,
@@ -962,6 +973,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/men.html",
+		"oF": 0
+		},
+	"\/oferty.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/oferty.html",
 		"oF": 0
 		},
 	"\/page.html": {

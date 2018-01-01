@@ -36,3 +36,22 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
+
+$(function () {
+    $(".customer-list")
+        .slice(0, 2)
+        .show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".customer-list:hidden")
+            .slice(0, 2)
+            .slideDown();
+        if ($("customer-list:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        
+    });
+});
+
+
+
