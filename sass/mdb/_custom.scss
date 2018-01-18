@@ -1,468 +1,544 @@
-// Mixins
-@mixin bgimage-jpg($name) {
-    $url:"../img/#{$name}.jpg";
-    background: url($url);
-}
-
-@mixin bgimage-png($name) {
-    $url:"../img/#{$name}.png";
-    background: url($url);
-}
-
-@mixin bg-attr($bg-size, $bg-repeat, $bg-position) {
-    background-size: $bg-size;
-    background-repeat: $bg-repeat;
-    background-position: $bg-position;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-main {
-    margin-top: 6rem;
-}
-
-.venus-h1 {
-    color: #DA4F7A;
-}
-
-.venus-space {
-    margin-top: 2rem;
-}
-
-// Start Page Magme
-// .hm-gradient .full-bg-img {
-//     background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-//     background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-//     background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
-//     background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-//     background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-// }
-.flex-center {
-    color: #fff;
-}
-
-.intro-1 {
-    @include bgimage-jpg('venus_intro_lady');
-    @include bg-attr(cover, no-repeat, center);
-}
-
-// Start Page End
-// Home Page Start
-// Logo
-.venus-logo-brand {
-    img {
-        max-width: 130px;
-        margin-top: 0px;
-    }
-}
-
-// Modal Login/Register
-.modal {
-    .modal-c-tabs {
-        .modal-body {
-            .form-check {
-                padding: 0 2rem 0;
-                font-size: .8rem;
-            }
-            a {
-                color: red !important;
-            }
-        }
-        .nav-tabs {
-            border-top-left-radius: .25rem;
-            border-top-right-radius: .25rem;
-        }
-        .modal-footer {
-            .pt-1 {
-                color: black !important;
-            }
-            a {
-                color: red !important;
-            }
-        }
-    }
-    .nav-item {
-        .nav-link.active {
-            background-color: #DA4F7A;
-            color: white;
-        }
-        .nav-link {
-            color: black;
-        }
-    }
-}
-
-// Modal Dodaj Opinie
-.modal {
-    .venus-add-opinion-content {
-        border-top-left-radius: .45rem;
-        border-top-right-radius: .45rem;
-    }
-}
-
-// Slides
-.venus-first-slide {
-    @include bgimage-jpg('slide1');
-    @include bg-attr(cover, no-repeat, center);
-}
-
-.venus-second-slide {
-    @include bgimage-jpg('slide2');
-    @include bg-attr(cover, no-repeat, center);
-}
-
-.venus-third-slide {
-    @include bgimage-jpg('slide3');
-    @include bg-attr(cover, no-repeat, center);
-}
-
-
-/* Navigation*/
-
-.navbar {
-    background-color: transparent;
-    font-size: .8rem;
-    .job-link {
-        border: 1px solid #fff;
-    }
-}
-
-.venus-non-transparent-nav {
-    background: -moz-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
-    background: -webkit-gradient(linear, 45deg, from(rgba(231, 11, 96, 0.8)), to(rgba(42, 27, 161, .8)));
-    background: -o-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
-    background: linear-gradient(to 45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
-}
-
-.top-nav-collapse {
-    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
-    background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-    background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-}
-
-.navbar .scrolling-navbar {
-    -webkit-transition: background 3s ease-in-out, padding 9s ease-in-out;
-    -moz-transition: background 3s ease-in-out, padding 9s ease-in-out;
-    transition: background 3s ease-in-out, padding 9s ease-in-out;
-}
-
-.anons-item {
-    border: 1px solid #fff;
-}
-
-
-/* Carousel Home Page*/
-
-.carousel {
-    height: 80%;
-}
-
-.carousel-item,
-.active {
-    height: 100%;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-
-/*Caption*/
-
-.flex-center {
-    color: #fff;
-}
-
-// Carousel Single Page
-#carousel-example-venus-single {
-    height: 70%;
-    .venus-single-first-slide {
-        @include bgimage-jpg('single-lady');
-        @include bg-attr(cover, no-repeat, center);
-    }
-}
-
-// Body Single Page
-.venus-single {
-    .card-header {
-        background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-        background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-        background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
-        background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-        background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-    }
-    // Venus SlideShow Gallery
-    .venus-gallery-container {
-        position: relative;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        border-radius: 0.3rem;
-        margin-bottom: 3rem;
-        .cursor {
-            cursor: pointer;
-        }
-        /* Hide the images by default */
-        .mySlides {
-            display: none;
-        }
-        .venus-slideshow-single {
-            width: 100%;
-            border-top-left-radius: 0.3rem;
-            border-top-right-radius: 0.3rem;
-        }
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 40%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-        /* Container for image text */
-        .caption-container {
-            text-align: center;
-            padding: 2px 16px;
-            color: white;
-            background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-            background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-            background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
-            background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-            background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
-        }
-        .row-slider:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        /* Six columns side by side */
-        .column {
-            float: left;
-            width: 16.66%;
-        }
-        /* Add a transparency effect for thumnbail images */
-        .demo {
-            opacity: 0.6;
-        }
-        .venus-thumbnail {
-            width: 100%;
-        }
-        .active,
-        .demo:hover {
-            opacity: 1;
-        }
-    }
-    .verify-customer-lead {
-        font-size: .8rem;
-    }
-    .customer-list {
-        display: none;
-    }
-    .avatar-customer {
-        max-width: 64px;
-    }
-    .venus-verify-user {
-        color: #00C851;
-        font-size: 0.9rem;
-    }
-    // Rating Star 
-    .rating {
-        border: none;
-        float: left;
-    }
-    .rating>input {
-        display: none;
-    }
-    .rating>label:before {
-        margin: 5px;
-        font-size: 1.25em;
-        font-family: FontAwesome;
-        display: inline-block;
-        content: "\f005";
-    }
-    .rating>.half:before {
-        content: "\f089";
-        position: absolute;
-    }
-    .rating>label {
-        color: #ddd;
-        float: right;
-    }
-    /***** CSS Magic to Highlight Stars on Hover *****/
-    .rating>input:checked~label,
-    /* show gold star when clicked */
-    .rating:not(:checked)>label:hover,
-    /* hover current star */
-    .rating:not(:checked)>label:hover~label {
-        color: #FFD700;
-    }
-    /* hover previous stars in list */
-    .rating>input:checked+label:hover,
-    /* hover current star when changing rating */
-    .rating>input:checked~label:hover,
-    .rating>label:hover~input:checked~label,
-    /* lighten current selection */
-    .rating>input:checked~label:hover~label {
-        color: #FFED85;
-    }
-}
-
-.navbar .btn-group .dropdown-menu a:hover {
-    color: #000 !important;
-}
-
-.navbar .btn-group .dropdown-menu a:active {
-    color: #fff !important;
-}
-
-.card {
-    margin-bottom: 3rem;
-}
-
-.venus-jumbo {
-    @include bgimage-jpg('new_jumbo_anons');
-    @include bg-attr(cover, no-repeat, center);
-}
-
-// Simple Page
-.venus-simple-page {
-    background: #fff;
-    .container {
-        height: 100vh;
-        >div {
-            padding-top: 30%;
-        }
-    }
-}
-
-// Kobiety
-.venus-simple-search {
-    label.active {
-        transform: translateY(-40%);
-        font-size: 1.2rem;
-    }
-    input[type=text] {
-        height: 3.3rem;
-    }
-}
-
-// Oferty pracy
-.job-container {
-    padding-bottom: 0;
-}
-
-.job-header {
-    margin-top: 5rem;
-}
-
-.job-search {
-    padding: 0 2rem;
-    .btn {
-        margin-left: 0;
-        margin-top: 1.2rem;
-    }
-}
-
-footer.page-footer {
-    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
-    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
-}
-
-// Responsive
-@media (max-width: 767px) {
-    .card-title {
-        font-size: 0.9rem;
-    }
-    .card-text {
-        display: none;
-    }
-    .btn {
-        font-size: 0.7rem;
-        padding: 0.35rem 1.13rem;
-        margin: 2px;
-    }
-    .venus-single {
-        .card-title {
-            font-size: 1.5rem;
-        }
-        .venus-space {
-            margin-top: 0;
-        }
-    }
-    .card {
-        .card-body {
-            .btn-anons {
-                display: none;
-            }
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav {
-        margin-top: 1%;
-    }
-    .venus-jumbo {
-        padding-top: 15rem;
-        padding-bottom: 8rem;
-        .jumbotron-heading {
-            color: #DA4F7A;
-            font-weight: 400;
-            text-align: left;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background: -moz-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
-        background: -webkit-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
-        background: -webkit-gradient(linear, 45deg, from(rgba(231, 11, 96, 0.8)), to(rgba(42, 27, 161, .9)));
-        background: -o-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
-        background: linear-gradient(to 45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
-    }
-}
-
-@media (min-width: 600px) {
-    .navbar.scrolling-navbar.top-nav-collapse {
-        padding-bottom: 10px;
-    }
-}
-
-@media (max-width: 776px) {
-    .carousel {
-        height: 70%;
-    }
-}
+   // Colors:
+   $venus-pink: #DA4F7A;
+   $user-panel-color: #B24592;
+   // Mixins
+   @mixin bgimage-jpg($name) {
+       $url:"../img/#{$name}.jpg";
+       background: url($url);
+   }
+   
+   @mixin bgimage-png($name) {
+       $url:"../img/#{$name}.png";
+       background: url($url);
+   }
+   
+   @mixin bg-attr($bg-size, $bg-repeat, $bg-position) {
+       background-size: $bg-size;
+       background-repeat: $bg-repeat;
+       background-position: $bg-position;
+   }
+   
+   // Sections
+   // Form Control Global
+   // Start Page Magme 
+   // Start Page End
+   // Home Page Start
+   // Logo
+   // Modal Login/Register
+   // Modal Add opinion about girl
+   // Slides
+   // Navigation
+   // Carousel Home Page
+   // Hero Single Page - Single Lady Page
+   // Body Single Page
+   // Venus SlideShow Gallery
+   // Rating Star 
+   // Sample Page
+   // Kobiety
+   // Oferty pracy
+   // Panel Klienta
+   // Responsive
+   //    Form-control-global
+   .md-form {
+       position: relative;
+       margin-bottom: 1.5rem;
+       label {
+           @include transition(.2s ease-out);
+           color: #757575;
+           position: absolute;
+           top: 0.8rem;
+           left: 0;
+           font-size: 1rem;
+           cursor: text;
+           &.active {
+               @include transform(translateY(-20%));
+               font-size: $label-font-size;
+           }
+       }
+   }
+   
+   html,
+   body {
+       height: 100%;
+   }
+   
+   main {
+       margin-top: 6rem;
+   }
+   
+   .venus-h1 {
+       color: $venus-pink;
+   }
+   
+   .venus-space {
+       margin-top: 2rem;
+   }
+   
+   // Start Page Magme
+   // .hm-gradient .full-bg-img {
+   //     background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+   //     background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+   //     background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
+   //     background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+   //     background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+   // }
+   .flex-center {
+       color: #fff;
+   }
+   
+   .intro-1 {
+       @include bgimage-jpg('venus_intro_lady');
+       @include bg-attr(cover, no-repeat, center);
+   }
+   
+   // Start Page End
+   // Home Page Start
+   // Logo
+   .venus-logo-brand {
+       img {
+           max-width: 130px;
+           margin-top: 0px;
+       }
+   }
+   
+   // Modal Login/Register
+   .modal {
+       .modal-c-tabs {
+           .modal-body {
+               .form-check {
+                   padding: 0 2rem 0;
+                   font-size: .8rem;
+               }
+               a {
+                   color: red !important;
+               }
+           }
+           .nav-tabs {
+               border-top-left-radius: .25rem;
+               border-top-right-radius: .25rem;
+           }
+           .modal-footer {
+               .pt-1 {
+                   color: black !important;
+               }
+               a {
+                   color: red !important;
+               }
+           }
+       }
+       .nav-item {
+           .nav-link.active {
+               background-color: $venus-pink;
+               color: white;
+           }
+           .nav-link {
+               color: black;
+           }
+       }
+   }
+   
+   // Modal Add opinion about girl
+   .modal {
+       .venus-add-opinion-content {
+           border-top-left-radius: .45rem;
+           border-top-right-radius: .45rem;
+       }
+   }
+   
+   // Slides
+   .venus-first-slide {
+       @include bgimage-jpg('slide1');
+       @include bg-attr(cover, no-repeat, center);
+   }
+   
+   .venus-second-slide {
+       @include bgimage-jpg('slide2');
+       @include bg-attr(cover, no-repeat, center);
+   }
+   
+   .venus-third-slide {
+       @include bgimage-jpg('slide3');
+       @include bg-attr(cover, no-repeat, center);
+   }
+   /* Navigation*/
+   
+   .navbar {
+       background-color: transparent;
+       font-size: .8rem;
+       .job-link {
+           border: 1px solid #fff;
+       }
+   }
+   
+   .venus-non-transparent-nav {
+       background: -moz-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
+       background: -webkit-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
+       background: -webkit-gradient(linear, 45deg, from(rgba(231, 11, 96, 0.8)), to(rgba(42, 27, 161, .8)));
+       background: -o-linear-gradient(45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
+       background: linear-gradient(to 45deg, rgba(231, 11, 96, 0.8), rgba(42, 27, 161, .8) 100%);
+   }
+   
+   .top-nav-collapse {
+       background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+       background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+       background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
+       background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+       background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+   }
+   
+   .navbar .scrolling-navbar {
+       -webkit-transition: background 3s ease-in-out, padding 9s ease-in-out;
+       -moz-transition: background 3s ease-in-out, padding 9s ease-in-out;
+       transition: background 3s ease-in-out, padding 9s ease-in-out;
+   }
+   
+   .anons-item {
+       border: 1px solid #fff;
+   }
+   /* Carousel Home Page*/
+   
+   .carousel {
+       height: 80%;
+   }
+   
+   .carousel-item,
+   .active {
+       height: 100%;
+   }
+   
+   .carousel-inner {
+       height: 100%;
+   }
+   /*Caption*/
+   
+   .flex-center {
+       color: #fff;
+   }
+   
+   // Hero Single Page - Single Lady Page
+   #carousel-example-venus-single {
+       height: 70%;
+       .venus-single-first-slide {
+           @include bgimage-jpg('single-lady');
+           @include bg-attr(cover, no-repeat, center);
+       }
+   }
+   
+   // Body Single Page
+   .venus-single {
+       .card-header {
+           background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+           background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+           background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
+           background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+           background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+       }
+       // Venus SlideShow Gallery
+       .venus-gallery-container {
+           position: relative;
+           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+           border-radius: 0.3rem;
+           margin-bottom: 3rem;
+           .cursor {
+               cursor: pointer;
+           }
+           /* Hide the images by default */
+           .mySlides {
+               display: none;
+           }
+           .venus-slideshow-single {
+               width: 100%;
+               border-top-left-radius: 0.3rem;
+               border-top-right-radius: 0.3rem;
+           }
+           .prev,
+           .next {
+               cursor: pointer;
+               position: absolute;
+               top: 40%;
+               width: auto;
+               padding: 16px;
+               margin-top: -50px;
+               color: white;
+               font-weight: bold;
+               font-size: 20px;
+               border-radius: 0 3px 3px 0;
+               user-select: none;
+               -webkit-user-select: none;
+           }
+           /* Position the "next button" to the right */
+           .next {
+               right: 0;
+               border-radius: 3px 0 0 3px;
+           }
+           /* On hover, add a black background color with a little bit see-through */
+           .prev:hover,
+           .next:hover {
+               background-color: rgba(0, 0, 0, 0.8);
+           }
+           /* Number text (1/3 etc) */
+           .numbertext {
+               color: #f2f2f2;
+               font-size: 12px;
+               padding: 8px 12px;
+               position: absolute;
+               top: 0;
+           }
+           /* Container for image text */
+           .caption-container {
+               text-align: center;
+               padding: 2px 16px;
+               color: white;
+               background: -moz-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+               background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+               background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, .8)), to(rgba(216, 27, 96, .8)));
+               background: -o-linear-gradient(45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+               background: linear-gradient(to 45deg, rgba(42, 27, 161, .8), rgba(216, 27, 96, .8) 100%);
+           }
+           .row-slider:after {
+               content: "";
+               display: table;
+               clear: both;
+           }
+           /* Six columns side by side */
+           .column {
+               float: left;
+               width: 16.66%;
+           }
+           /* Add a transparency effect for thumnbail images */
+           .demo {
+               opacity: 0.6;
+           }
+           .venus-thumbnail {
+               width: 100%;
+           }
+           .active,
+           .demo:hover {
+               opacity: 1;
+           }
+       }
+       .verify-customer-lead {
+           font-size: .8rem;
+       }
+       .customer-list {
+           display: none;
+       }
+       .avatar-customer {
+           max-width: 64px;
+       }
+       .venus-verify-user {
+           color: #00C851;
+           font-size: 0.9rem;
+       }
+       // Rating Star 
+       .rating {
+           border: none;
+           float: left;
+       }
+       .rating>input {
+           display: none;
+       }
+       .rating>label:before {
+           margin: 5px;
+           font-size: 1.25em;
+           font-family: FontAwesome;
+           display: inline-block;
+           content: "\f005";
+       }
+       .rating>.half:before {
+           content: "\f089";
+           position: absolute;
+       }
+       .rating>label {
+           color: #ddd;
+           float: right;
+       }
+       /***** CSS Magic to Highlight Stars on Hover *****/
+       .rating>input:checked~label,
+       /* show gold star when clicked */
+       .rating:not(:checked)>label:hover,
+       /* hover current star */
+       .rating:not(:checked)>label:hover~label {
+           color: #FFD700;
+       }
+       /* hover previous stars in list */
+       .rating>input:checked+label:hover,
+       /* hover current star when changing rating */
+       .rating>input:checked~label:hover,
+       .rating>label:hover~input:checked~label,
+       /* lighten current selection */
+       .rating>input:checked~label:hover~label {
+           color: #FFED85;
+       }
+   }
+   
+   .navbar .btn-group .dropdown-menu a:hover {
+       color: #000 !important;
+   }
+   
+   .navbar .btn-group .dropdown-menu a:active {
+       color: #fff !important;
+   }
+   
+   .card {
+       margin-bottom: 3rem;
+   }
+   
+   .venus-jumbo {
+       @include bgimage-jpg('new_jumbo_anons');
+       @include bg-attr(cover, no-repeat, center);
+   }
+   
+   // Sample Page
+   .venus-simple-page {
+       background: #fff;
+       .container {
+           height: 100vh;
+           >div {
+               padding-top: 30%;
+           }
+       }
+   }
+   
+   // Kobiety
+   .venus-simple-search {
+       label.active {
+           transform: translateY(-40%);
+           font-size: 1.2rem;
+       }
+       input[type=text] {
+           height: 3.3rem;
+       }
+   }
+   
+   // Oferty pracy
+   .job-container {
+       padding-bottom: 0;
+   }
+   
+   .job-header {
+       margin-top: 5rem;
+   }
+   
+   .job-search {
+       padding: 0 2rem;
+       .btn {
+           margin-left: 0;
+           margin-top: 1.2rem;
+       }
+   }
+   
+   // Panel Klienta
+   .user-panel {
+       background: $user-panel-color;
+       background: -webkit-linear-gradient(to left, #B24592, #F15F79);
+       background: linear-gradient(to left, #B24592, #F15F79);
+       .user-account-container {
+           padding-top: 14%;
+       }
+       .card-user {
+           margin-bottom: 2rem;
+       }
+       .venus-select {
+           margin-left: 15%;
+       }
+       .venus-choose-file {
+           margin-left: 30% !important;
+           margin-top: 3% !important;
+           width: 50% !important;
+       }
+       .venus-about-main-picture {
+           font-size: $label-font-size;
+       }
+   }
+   
+   footer.page-footer {
+       background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+       background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+       background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(216, 27, 96, .6)));
+       background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+       background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, .6) 100%);
+   }
+   
+   // Responsive
+   @media (max-width: 767px) {
+       .card-title {
+           font-size: 0.9rem;
+       }
+       .card-text {
+           display: none;
+       }
+       .btn {
+           font-size: 0.7rem;
+           padding: 0.35rem 1.13rem;
+           margin: 2px;
+       }
+       .venus-single {
+           .card-title {
+               font-size: 1.5rem;
+           }
+           .venus-space {
+               margin-top: 0;
+           }
+       }
+       .card {
+           .card-body {
+               .btn-anons {
+                   display: none;
+               }
+           }
+       }
+       .user-panel {
+           .user-account-container {
+               padding-top: 25%;
+           }
+       }
+   }
+   
+   @media (min-width: 992px) {
+       .navbar-expand-lg .navbar-nav {
+           margin-top: 1%;
+       }
+       .venus-jumbo {
+           padding-top: 15rem;
+           padding-bottom: 8rem;
+           .jumbotron-heading {
+               color: $venus-pink;
+               font-weight: 400;
+               text-align: left;
+           }
+       }
+   }
+   
+   @media only screen and (max-width: 768px) {
+       .navbar {
+           background: -moz-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
+           background: -webkit-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
+           background: -webkit-gradient(linear, 45deg, from(rgba(231, 11, 96, 0.8)), to(rgba(42, 27, 161, .9)));
+           background: -o-linear-gradient(45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
+           background: linear-gradient(to 45deg, rgba(231, 11, 96, 0.9), rgba(42, 27, 161, .9) 100%);
+       }
+   }
+   
+   @media (min-width: 600px) {
+       .navbar.scrolling-navbar.top-nav-collapse {
+           padding-bottom: 10px;
+       }
+   }
+   
+   @media (max-width: 776px) {
+       .carousel {
+           height: 70%;
+       }
+   }
+   
+   @media (max-width: 992px) {
+       .user-top-menu {
+           float: left;
+       }
+       .navbar {
+           .job-link {
+               border: none;
+           }
+       }
+   }

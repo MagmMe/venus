@@ -24,13 +24,13 @@ textarea.md-textarea {
     box-shadow: none;
     box-sizing: content-box;
     @include transition(all .3s);
-
     // Disabled & readonly
-    &:disabled, &[readonly="readonly"] {
+    &:disabled,
+    &[readonly="readonly"] {
         color: $input-disabled-color;
         border-bottom: 1px dotted $input-disabled-color;
         background-color: transparent;
-        + label {
+        +label {
             color: $input-disabled-color;
             background-color: transparent;
         }
@@ -40,34 +40,36 @@ textarea.md-textarea {
         border-bottom: 1px solid $input-focus-color;
         box-shadow: 0 1px 0 0 $input-focus-color;
         // Focused label style
-        + label {
+        +label {
             color: $input-focus-color;
         }
     }
-
     // Valid input style
-    &.valid, &:focus.valid {
+    &.valid,
+    &:focus.valid {
         border-bottom: 1px solid $input-success-color;
         box-shadow: 0 1px 0 0 $input-success-color;
     }
-
-    &.valid + label:after, &:focus.valid + label:after {
+    &.valid+label:after,
+    &:focus.valid+label:after {
         content: attr(data-success);
         color: $input-success-color;
         opacity: 1;
     }
     // Invalid input style
-    &.invalid, &:focus.invalid {
+    &.invalid,
+    &:focus.invalid {
         border-bottom: 1px solid $input-error-color;
         box-shadow: 0 1px 0 0 $input-error-color;
     }
-    &.invalid + label:after, &:focus.invalid + label:after {
+    &.invalid+label:after,
+    &:focus.invalid+label:after {
         content: attr(data-error);
         color: $input-error-color;
         opacity: 1;
     }
     // Form message shared styles
-    + label:after {
+    +label:after {
         display: block;
         content: "";
         position: absolute;
@@ -75,7 +77,6 @@ textarea.md-textarea {
         opacity: 0;
         transition: .2s opacity ease-out, .2s color ease-out;
     }
-
     &.input-alternate {
         padding: 0 15px;
         height: 2.1rem;
@@ -89,8 +90,8 @@ textarea.md-textarea {
             border-bottom: 0;
         }
     }
-
 }
+
 // Input with label
 .form-control {
     padding: 0;
@@ -112,6 +113,7 @@ textarea.md-textarea {
         border-bottom: 1px solid #bdbdbd;
     }
 }
+
 // Input + label wrapper styles
 .md-form {
     position: relative;
@@ -125,7 +127,7 @@ textarea.md-textarea {
         font-size: 1rem;
         cursor: text;
         &.active {
-            @include transform(translateY(-140%));
+            @include transform(translateY(-20%));
             font-size: $label-font-size;
         }
     }
@@ -135,30 +137,30 @@ textarea.md-textarea {
         position: absolute;
         width: 3rem;
         font-size: 2rem;
-        ~ input, ~ textarea {
+        ~input,
+        ~textarea {
             margin-left: 3rem;
             width: 92%;
             width: calc(100% - 3rem);
         }
-        ~ textarea {
+        ~textarea {
             padding-top: .8rem;
         }
-        ~ label {
+        ~label {
             margin-left: 3rem;
         }
         &.active {
             color: $input-focus-color;
-        } 
+        }
     }
-
     @media #{$medium-and-down} {
-        .prefix ~ input {
+        .prefix~input {
             width: 86%;
             width: calc(100% - 3rem);
         }
     }
     @media #{$small-and-down} {
-        .prefix ~ input {
+        .prefix~input {
             width: 80%;
             width: calc(100% - 3rem);
         }
@@ -166,7 +168,6 @@ textarea.md-textarea {
     .btn {
         margin-bottom: 1.5rem;
     }
-
     &.form-sm {
         input {
             padding-bottom: 0.2rem;
@@ -181,11 +182,12 @@ textarea.md-textarea {
             font-size: 1.5rem;
             top: 0.4rem;
         }
-        .prefix ~ input, .prefix ~ textarea, .prefix ~ label  {
+        .prefix~input,
+        .prefix~textarea,
+        .prefix~label {
             margin-left: 2.2rem;
         }
     }
-
     &.input-group {
         padding-left: 1rem;
         @include placeholder {
@@ -193,11 +195,10 @@ textarea.md-textarea {
             padding-top: 2px;
         }
     }
-
 }
 
 .form-group {
-    display:block;
+    display: block;
 }
 
 .form-inline {
@@ -207,7 +208,8 @@ textarea.md-textarea {
     .form-group {
         margin-right: 2rem;
     }
-}   
+}
+
 // Default textarea
 textarea {
     width: 100%;
@@ -230,6 +232,6 @@ textarea {
     padding-top: 1.2rem;
 }
 
-.orange-gradient{
+.orange-gradient {
     background: linear-gradient(40deg, #FFD86F, #FC6262);
 }

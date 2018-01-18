@@ -6504,6 +6504,25 @@ table.table-sm td {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem; }
 
+.md-form {
+  position: relative;
+  margin-bottom: 1.5rem; }
+  .md-form label {
+    transition: 0.2s ease-out;
+    color: #757575;
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    font-size: 1rem;
+    cursor: text; }
+    .md-form label.active {
+      -webkit-transform: translateY(-20%);
+      -moz-transform: translateY(-20%);
+      -ms-transform: translateY(-20%);
+      -o-transform: translateY(-20%);
+      transform: translateY(-20%);
+      font-size: 0.8rem; }
+
 html,
 body {
   height: 100%; }
@@ -6783,6 +6802,23 @@ main {
     margin-left: 0;
     margin-top: 1.2rem; }
 
+.user-panel {
+  background: #B24592;
+  background: -webkit-linear-gradient(to left, #B24592, #F15F79);
+  background: linear-gradient(to left, #B24592, #F15F79); }
+  .user-panel .user-account-container {
+    padding-top: 14%; }
+  .user-panel .card-user {
+    margin-bottom: 2rem; }
+  .user-panel .venus-select {
+    margin-left: 15%; }
+  .user-panel .venus-choose-file {
+    margin-left: 30% !important;
+    margin-top: 3% !important;
+    width: 50% !important; }
+  .user-panel .venus-about-main-picture {
+    font-size: 0.8rem; }
+
 footer.page-footer {
   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
   background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%);
@@ -6804,7 +6840,9 @@ footer.page-footer {
   .venus-single .venus-space {
     margin-top: 0; }
   .card .card-body .btn-anons {
-    display: none; } }
+    display: none; }
+  .user-panel .user-account-container {
+    padding-top: 25%; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
@@ -6832,3 +6870,9 @@ footer.page-footer {
 @media (max-width: 776px) {
   .carousel {
     height: 70%; } }
+
+@media (max-width: 992px) {
+  .user-top-menu {
+    float: left; }
+  .navbar .job-link {
+    border: none; } }
