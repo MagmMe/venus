@@ -7,7 +7,7 @@
 		"uuidString": "0438D90E-764D-481D-B6F4-59F6FCE18C5B"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -967,6 +967,27 @@
 		"iS": 7715,
 		"oA": 0,
 		"oAP": "\/img\/venuslux_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/Venuslux_logo_podstawowe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/Venuslux_logo_podstawowe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/venuslux_new_logo.png": {
+		"ft": 32768,
+		"iS": 10181,
+		"oA": 0,
+		"oAP": "\/img\/venuslux_new_logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2714,6 +2735,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,

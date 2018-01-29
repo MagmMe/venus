@@ -6536,6 +6536,12 @@ main {
 .venus-space {
   margin-top: 2rem; }
 
+.logo_venus_svg_hello_page {
+  max-width: 250px; }
+
+.logo_venus_svg_main {
+  max-width: 200px; }
+
 .flex-center {
   color: #fff; }
 
@@ -6827,6 +6833,8 @@ footer.page-footer {
   background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(216, 27, 96, 0.6) 100%); }
 
 @media (max-width: 767px) {
+  .home-intro-venus {
+    margin-top: 4rem; }
   .card-title {
     font-size: 0.9rem; }
   .card-text {
@@ -6842,7 +6850,7 @@ footer.page-footer {
   .card .card-body .btn-anons {
     display: none; }
   .user-panel .user-account-container {
-    padding-top: 25%; } }
+    padding-top: 35%; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
